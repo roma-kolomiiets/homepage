@@ -3,14 +3,14 @@
 }
 
 .foreground{  
-    top: 115px;
-    left: 30px;
+    top: 110px;
+    left: 25px;
     position: absolute;
 }
 
 .background:hover~ .foreground{
     transition: linear 1s;
-    top: 115px;
-    left: 100px;
+    top: 110px;
+    left: 95px;
     position: absolute;
 }
