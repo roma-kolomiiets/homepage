@@ -3,14 +3,20 @@
 }
 
 .foreground{  
-    top: 110px;
+    top: 125px;
     left: 25px;
     position: absolute;
 }
 
 .background:hover~ .foreground{
     transition: linear 1s;
-    top: 110px;
+    top: 125px;
     left: 95px;
     position: absolute;
+}
+
+.lang{
+    padding: 0;
+    border: none;
+    background: none;
 }
