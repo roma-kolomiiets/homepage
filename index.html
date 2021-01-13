@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <title>Résumé</title>
     <link rel="stylesheet" href="https://volodymyrkushnir.com/assets/stylesheets/base.css">
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <main>
@@ -12,18 +13,20 @@
           <div class="stackable grid">
             <div class="row">
               <div class="three wide center aligned column">
-                <style>
-                  img {
-                   border: 5px solid #000;
-                  }
-                 </style>
-                <p><img src="SpongeBob.png" alt="sponge" width="150px" height="200px" ></p>
+                 <div class="background">
+                <p><br><img src="SpongeBob.png" alt="sponge" width="150px" height="200px" ></p>
+              </div>
+              <div class="foreground">
+                <p><img src="Gary.png" alt="gary" width="70px" height="90px" ></p>
+              </div>
               </div>
               <div class="thirteen wide column">
                 <div class="stackable grid">
                   <div class="sixteen wide column">
+                    <div id = "names">
                     <h1 class="name">SpongeBob SquarePants</h1>
                     <div class="job"><strong>Head Chef</strong></div>
+                    </div>
                     <ul class="contacts">
                       <li>
                         <a href="https://uk-ua.facebook.com/spongebob" rel="author" class="facebook">
@@ -53,9 +56,8 @@
                     <div class="divider"></div>
                   </div>
                   <div class="sixteen wide column">
-                    <h2>Resume</h2>
-                      
-                    <p>&mdash; A sponge with over 7 years of dedicated service to the Krusty Krab and 5 years of Jellyfish fishing. Posesses unadulterated enthusiasm for his work and passion in reaching his goals.</p>
+                   <div id = "sponge"> <h2>Resume</h2>
+                    <p>&mdash; A sponge with over 7 years of dedicated service to the Krusty Krab and 5 years of Jellyfish fishing. Posesses unadulterated enthusiasm for his work and passion in reaching his goals</p></div>
                   </div>
                 </div>
               </div>
@@ -66,14 +68,18 @@
               </div>
             </div>
             <section>
-              <h3>Languages</h3>
-              <p class="tags small"><a href="/uk-ua" hreflang="uk" rel="alternate" class="language" lang="uk">&#x1f1fa;&#x1f1e6; <span>УКРАЇНСЬКА</span></a> <a href="/ru-ru" hreflang="ru" rel="alternate" class="language" lang="ru">&#x1f1f7;&#x1f1fa; <span>РУССКИЙ</span></a> <span class="language" lang="en">&#x1f1fa;&#x1f1f8; ENGLISH</span></p>
+             <div id = "language"> <h3>Languages</h3></div>
+              <p class="tags small">
+                <br><button class="lang">УКРАЇНСЬКА</button>
+                <button class="lang">РУССКИЙ</button>
+                <button disabled class="lang">ENGLISH</button>
+               
             </section>
             <div class="row">
               <div class="ten wide column">
-                <h3>Experience</h3>
+                <div id = "exp"><h3>Experience</h3>
                 <h5>Recent</h5>
-                <em>2013 – Present</em> <br>
+                <em>Aug. 2013 – Present</em> <br>
                 <li class = "details">
                 <input type = "checkbox" id = "project-3"></input>
                   <label for = "project-3" class="summary"><strong>Head Chef at Krusty Krab</strong><br></label>
@@ -109,7 +115,7 @@
                      </ul>
                     </div>
                   </li>
-              <h3>Education & Certification</h3>
+              <br><h3>Education & Certification</h3>
               <ul class="timeline">
                 <li>
                   <div><em>April 2009</em></div>
@@ -126,7 +132,9 @@
               </ul>
             </section>
             </div>
+          </div>
               <div class="six wide column">
+                <div id ="life">
                 <h3>LIFE CREDO</h3>
                   <p class="tags small">IF YOU BELIEVE IN YOURSELF AND WITH A TINY PINCH OF MAGIC, ALL YOUR DREAMS CAN COME TRUE</p>
                 </section>
@@ -162,11 +170,14 @@
                     <li>Club SpongeBob</li>
                   </ul>
                 </section>
+                </section>
+              </div>
               </div>
             </div>
           </div>
         </div>
       </article>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
