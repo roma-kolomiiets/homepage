@@ -5,7 +5,8 @@
 .foreground{  
     top: 125px;
     left: 25px;
-    position: absolute;
+    position: absolute;  
+    pointer-events:none;
 }
 
 .background:hover~ .foreground{
